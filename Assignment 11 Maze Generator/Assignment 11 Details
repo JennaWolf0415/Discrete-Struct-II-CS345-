@@ -1,0 +1,30 @@
+Now that we have discovered how graph theory can keep us all warm, dry, and fully clothed, let's turn our attention to how we can avoid boredom through the magic of graphs. When I was an undergraduate, I had to write such dull program. Then, one day, I discovered that I really enjoyed solving mazes! The thing is, I did not have much money (did I mention that I was a college student) and so I could not afford to buy as many mazes as I would have liked. Luckily, I read about a wonderful way to generate mazes using a modified version of Prim's AlgorithmLinks to an external site.! So I wrote a little program which could generate mazes in text form and, then I was able to waste as much time as I wanted! The problem was, that my new found infinite supply of mazes meant that my future looked bleak. I spent too much time puzzling and not enough time coding. My grades started to suffer, but the unsolved mazes that I had generated still plagued me. How could I concentrate knowing that I had not discovered all their paths? Fortunately, I read in my text book that the breadth first search algorithm could be employed to find the shortest path through a grid-based maze. So, I wrote another program! This one would solve all the mazes my first one had generated, and thus I was able to turn my attention to dating... er, I mean homework. Yeah, that's what I did with my time!
+
+Your task is to write a program which generates mazes and then solves them. A sample run of this program is shown below:
+
+Welcome to the maze generator.
+How many columns? 10
+How many rows? 6
+
+10x6 Maze
+##########
+S #     ##
+# # ### ##
+#   # #  E
+###   ####
+##########
+
+Would you like to see the solution (y/n)? y
+
+10x6 Maze Solution
+##########
+So#ooooo##
+#o#o###o##
+#ooo# #ooE
+###   ####
+##########
+
+Thank you for playing, now get back to your school work!
+Note that the way the program should display its output is "#" wall " " (space) - empty space "S" - Starting point "E" - Ending Point. When it displays the solution, it places a "o" in each grid spot where the line goes. If you choose to not display the solution, the program should display its closing message and exit. Note that the maze should be randomly generated using the randomized Prim's algorithm.
+
+You may write your program in any language that you wish, just submit a zip archive of all the files needed to run your code. Enjoy!
