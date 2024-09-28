@@ -1,0 +1,12 @@
+You are going to write two programs. They will both do the same thing, but they will use two different internal representations of graphs. The program should ask for  a list of vertices, followed by a list of edges. It should then indicate whether an Euler path exists in the graph. The input and display format are shown below:
+
+Enter Vertices (separated by spaces): A B C
+Enter Undirected Edges (Enter a . on a line by itself to end.)
+A B
+A C
+.
+This graph contains an Euler path.
+Note that vertices can be assumed to be single characters separated by spaces. The program's output should be one of either "This graph contains an Euler path." or "This graph does not contain an Euler path.". Also, this graph should be counted as an undirected graph. Internally, you should treat it as directed. So for the edge "A B" you should create both "A B" and "B A" edges. You can use any programming language you like.
+
+(50 points) Implement the above program using an adjacency list representation of the graph.
+(50 points) Implement the above program using an adjacency matrix represtation of the graph.
