@@ -1,1 +1,49 @@
+(40 points) Create a program which emulates Turing machines.  The program should do the following:
+Prompt the user to enter 5-Tuples in standard form (
+, 
+, or 
+).  Each 5-tuple in the table is entered on a line by itself, and input is terminated by entering a period '.' on a line by itself.
+The user is then prompted to enter the initial tape string (it may be blank).
+The user is then prompted for the maximum number of iterations.
+The machine then executes.  
+In each iteration, the machine prints its tape and state.  Write {state} to the left of the current position on the tape.
+The machine ends its run when it reaches a halting state (that is, it reaches a configuration not in its table), or when the maximum number of iterations have been reached.  The machine should indicate which is the case.
+The machine prints its final state.
+
+Here is a sample run of the machine where maximum iterations are reached:
+Enter 5-Tuples. A . by itself to end.
+A 0RB 
+B 1RA
+.
+Enter the initial tape and press enter.
+
+Maximum Iterations: 10
+{A} 
+0{B} 
+01{A} 
+010{B}
+0101{A}
+01010{B}
+010101{A}
+0101010{B}
+01010101{A}
+010101010{B}
+0101010101{A}
+Max Iterations Reached
+Final State: A
+
+Here is another run.  This time, the machine halts.
+
+Enter 5-Tuples. A . by itself to end.
+A YRB
+.
+Enter the initial tape and press enter.
+
+Maximum Iterations: 10
+{A} 
+Y{B}
+HALTED
+Final State: B
+
+Your machine should be able to execute any valid setup.  Your tape should be finite but unbounded, and it should grow in response to left and right motions.  You may program this machine in any language that you wish.  Upload an archive (zip, tar, etc.) of your program along with your written responses.
 
